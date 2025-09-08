@@ -32,7 +32,7 @@ public:
         return os.str();
     }
     
-    string toStandard() const {  // nombre correcto según enunciado
+    string toStandard() const {  
         const int h12 = (hour_ == 0 || hour_ == 12) ? 12 : hour_ % 12;
         const char* ampm = (hour_ < 12) ? "AM" : "PM";
         ostringstream os;
